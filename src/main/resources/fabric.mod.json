@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "secret_arena",
+	"version": "${version}",
+	"name": "Secret Arena",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"ItsIFox"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/secret_arena/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.ifox.secret_arena.SecretArena"
+		],
+		"fabric-datagen": [
+			"net.ifox.secret_arena.SecretArenaDataGenerator"
+		],
+		"client": [
+			"net.ifox.secret_arena.SecretArenaClient"
+		]
+	},
+	"mixins": [
+		"secret_arena.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
