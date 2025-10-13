@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+	"bottom": "secret_arena:block/wood_crate_bottom",
+	"side": "secret_arena:block/wood_crate_side",
+	"top": "secret_arena:block/wood_crate_top"
+  }
+}
