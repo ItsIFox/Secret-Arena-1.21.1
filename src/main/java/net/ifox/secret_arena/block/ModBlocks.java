@@ -1,6 +1,7 @@
 package net.ifox.secret_arena.block;
 
 import net.ifox.secret_arena.SecretArena;
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -9,6 +10,9 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
+
+    public static final Block CHECKER = registerBlock( "checker",
+        new Block(AbstractBlock.Settings.create().strength(-1)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
