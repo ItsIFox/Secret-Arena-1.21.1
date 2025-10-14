@@ -2,9 +2,6 @@ package net.ifox.secret_arena.item;
 
 import net.ifox.secret_arena.SecretArena;
 import net.minecraft.item.Item;
-import net.minecraft.item.SwordItem;
-import net.minecraft.item.ToolItem;
-import net.minecraft.item.ToolMaterials;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
