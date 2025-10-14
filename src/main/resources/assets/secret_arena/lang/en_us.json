@@ -2,6 +2,8 @@
   "itemgroup.secret_arena_items_group": "Secret Arena",
   "item.secret_arena.crowbar": "Crowbar",
   "block.secret_arena.checker": "Checker Tiles",
+  "block.secret_arena.checker_slab": "Checker Tile Slab",
+  "block.secret_arena.checker_stairs": "Checker Tile Stairs",
   "block.secret_arena.dev_orange": "Orange DEV Tiles",
   "block.secret_arena.dev_gray": "Gray DEV Tiles"
 }

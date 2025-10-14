@@ -18,6 +18,7 @@ public class ModItemsGroup {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.CROWBAR);
                         entries.add(ModBlocks.CHECKER);
+                        entries.add(ModBlocks.CHECKER_STAIRS);
                         entries.add(ModBlocks.CHECKER_SLAB);
                         entries.add(ModBlocks.DEV_ORANGE);
                         entries.add(ModBlocks.DEV_GRAY);

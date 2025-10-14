@@ -1,10 +1,7 @@
 package net.ifox.secret_arena.block;
 
 import net.ifox.secret_arena.SecretArena;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.MapColor;
-import net.minecraft.block.SlabBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -17,6 +14,8 @@ public class ModBlocks {
         new Block(AbstractBlock.Settings.create().strength(-1).resistance(6).mapColor(MapColor.PALE_YELLOW)));
     public static final Block CHECKER_SLAB = registerBlock( "checker_slab",
             new SlabBlock(AbstractBlock.Settings.create().strength(-1).resistance(6).mapColor(MapColor.PALE_YELLOW)));
+    public static final Block CHECKER_STAIRS = registerBlock( "checker_stairs",
+           new StairsBlock(CHECKER.getDefaultState(),AbstractBlock.Settings.create().strength(-1).resistance(6).mapColor(MapColor.PALE_YELLOW)));
     public static final Block DEV_ORANGE = registerBlock( "dev_orange",
             new Block(AbstractBlock.Settings.create().strength(8).resistance(600).mapColor(MapColor.ORANGE).requiresTool()));
     public static final Block DEV_GRAY = registerBlock( "dev_gray",
