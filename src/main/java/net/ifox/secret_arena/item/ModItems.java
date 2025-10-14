@@ -2,12 +2,15 @@ package net.ifox.secret_arena.item;
 
 import net.ifox.secret_arena.SecretArena;
 import net.minecraft.item.Item;
+import net.minecraft.item.SwordItem;
+import net.minecraft.item.ToolItem;
+import net.minecraft.item.ToolMaterials;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-
+    public static final Item CROWBAR = registerItems("crowbar", new CrowbarItem( new Item.Settings().maxDamage(2048)));
 
     private static Item registerItems(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(SecretArena.MOD_ID, name), item);

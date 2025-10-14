@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.ifox.secret_arena.block.ModBlocks;
 import net.ifox.secret_arena.item.ModItems;
+import net.ifox.secret_arena.item.ModItemsGroup;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,6 +14,7 @@ public class SecretArena implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemsGroup.registerItemsGroup();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 	}
