@@ -1,3 +1,5 @@
 {
-  "block.secret_arena.checker": "Checker Tiles"
+  "block.secret_arena.checker": "Checker Tiles",
+  "block.secret_arena.dev_orange": "DEV Orange",
+  "block.secret_arena.dev_gray": "DEV Gray"
 }

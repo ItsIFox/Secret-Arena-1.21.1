@@ -13,7 +13,11 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
 
     public static final Block CHECKER = registerBlock( "checker",
-        new Block(AbstractBlock.Settings.create().strength(-1).mapColor(MapColor.PALE_YELLOW).resistance(6)));
+        new Block(AbstractBlock.Settings.create().strength(-1).resistance(6).mapColor(MapColor.PALE_YELLOW)));
+    public static final Block DEV_ORANGE = registerBlock( "dev_orange",
+            new Block(AbstractBlock.Settings.create().strength(8).resistance(600).mapColor(MapColor.ORANGE).requiresTool()));
+    public static final Block DEV_GRAY = registerBlock( "dev_gray",
+            new Block(AbstractBlock.Settings.create().strength(8).resistance(600).mapColor(MapColor.STONE_GRAY).requiresTool()));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
