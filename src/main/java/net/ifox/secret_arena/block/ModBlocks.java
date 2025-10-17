@@ -20,6 +20,8 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().strength(8).resistance(600).mapColor(MapColor.ORANGE).requiresTool()));
     public static final Block DEV_GRAY = registerBlock( "dev_gray",
             new Block(AbstractBlock.Settings.create().strength(8).resistance(600).mapColor(MapColor.STONE_GRAY).requiresTool()));
+    public static final Block CONE = registerBlock( "cone",
+            new ConeBlock(AbstractBlock.Settings.create().strength(1).resistance(1).mapColor(MapColor.PALE_YELLOW).breakInstantly()));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
