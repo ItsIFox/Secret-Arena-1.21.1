@@ -6,6 +6,7 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
@@ -21,7 +22,7 @@ public class ModBlocks {
     public static final Block DEV_GRAY = registerBlock( "dev_gray",
             new Block(AbstractBlock.Settings.create().strength(8).resistance(600).mapColor(MapColor.STONE_GRAY).requiresTool()));
     public static final Block CONE = registerBlock( "cone",
-            new ConeBlock(AbstractBlock.Settings.create().strength(1).resistance(1).mapColor(MapColor.PALE_YELLOW).breakInstantly()));
+            new ConeBlock(AbstractBlock.Settings.create().strength(0.1F).resistance(3).mapColor(MapColor.TERRACOTTA_RED).sounds(BlockSoundGroup.BAMBOO_WOOD)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

@@ -17,6 +17,7 @@ public class ModItemsGroup {
                     .displayName(Text.translatable("itemgroup.secret_arena_items_group"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.CROWBAR);
+                        entries.add(ModBlocks.CONE);
                         entries.add(ModBlocks.CHECKER);
                         entries.add(ModBlocks.CHECKER_STAIRS);
                         entries.add(ModBlocks.CHECKER_SLAB);

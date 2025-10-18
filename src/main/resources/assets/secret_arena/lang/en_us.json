@@ -1,6 +1,7 @@
 {
   "itemgroup.secret_arena_items_group": "Secret Arena",
   "item.secret_arena.crowbar": "Crowbar",
+  "block.secret_arena.cone": "Cone",
   "block.secret_arena.checker": "Checker Tiles",
   "block.secret_arena.checker_slab": "Checker Tile Slab",
   "block.secret_arena.checker_stairs": "Checker Tile Stairs",
