@@ -23,6 +23,8 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().strength(8).resistance(600).mapColor(MapColor.STONE_GRAY).requiresTool()));
     public static final Block CONE = registerBlock( "cone",
             new ConeBlock(AbstractBlock.Settings.create().strength(0.1F).resistance(3).mapColor(MapColor.TERRACOTTA_RED).sounds(BlockSoundGroup.BAMBOO_WOOD)));
+    public static final Block WOOD_CRATE = registerBlock( "wood_crate",
+            new CrateBlock(AbstractBlock.Settings.create().strength(2).resistance(2).mapColor(MapColor.OAK_TAN).sounds(BlockSoundGroup.WOOD).burnable()));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

@@ -1,46 +1,62 @@
 package net.ifox.secret_arena.item;
 
-import net.ifox.secret_arena.block.ModBlocks;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
+import net.minecraft.block.BlockState;
+import net.minecraft.component.type.AttributeModifierSlot;
+import net.minecraft.component.type.AttributeModifiersComponent;
+import net.minecraft.component.type.ToolComponent;
 import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.attribute.EntityAttributeModifier;
+import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemUsageContext;
-import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.server.world.ServerWorld;
-import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvents;
-import net.minecraft.util.ActionResult;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.ToolMaterial;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-import java.util.Map;
+import java.util.List;
 
 public class CrowbarItem extends Item {
-    private static final Map<Block,Block> CROWBAR_MAP =
-            Map.of(
-                    Blocks.BEDROCK, ModBlocks.CHECKER
-            );
-
-
-    public CrowbarItem(Settings settings) {
+    public CrowbarItem(Item.Settings settings) {
         super(settings);
+    }
+    public static AttributeModifiersComponent createAttributeModifiers(ToolMaterial material, float baseAttackDamage, float attackSpeed) {
+        return AttributeModifiersComponent.builder()
+                .add(
+                        EntityAttributes.GENERIC_ATTACK_DAMAGE,
+                        new EntityAttributeModifier(BASE_ATTACK_DAMAGE_MODIFIER_ID, baseAttackDamage + material.getAttackDamage(), EntityAttributeModifier.Operation.ADD_VALUE),
+                        AttributeModifierSlot.MAINHAND
+                )
+                .add(
+                        EntityAttributes.GENERIC_ATTACK_SPEED,
+                        new EntityAttributeModifier(BASE_ATTACK_SPEED_MODIFIER_ID, attackSpeed, EntityAttributeModifier.Operation.ADD_VALUE),
+                        AttributeModifierSlot.MAINHAND
+                )
+                .build();
+    }
+
+    public static ToolComponent createToolComponent() {
+        return new ToolComponent(List.of(), 1.0F, 2);
     }
 
     @Override
-    public ActionResult useOnBlock(ItemUsageContext context) {
-        World world = context.getWorld();
-        Block clickedBlock = world.getBlockState(context.getBlockPos()).getBlock();
+    public boolean canMine(BlockState state, World world, BlockPos pos, PlayerEntity miner) {
+        return !miner.isCreative();
+    }
 
-        if(CROWBAR_MAP.containsKey(clickedBlock)) {
-            if(!world.isClient()) {
-                world.setBlockState(context.getBlockPos(), CROWBAR_MAP.get(clickedBlock).getDefaultState());
+    @Override
+    public int getEnchantability() {
+        return 15;
+    }
 
-                context.getStack().damage(1,((ServerWorld) world),((ServerPlayerEntity) context.getPlayer()),
-                        item -> context.getPlayer().sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
+    @Override
+    public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+        return true;
+    }
 
-                world.playSound(null, context.getBlockPos(), SoundEvents.ENTITY_ENDER_DRAGON_DEATH, SoundCategory.BLOCKS);
-            }
-        }
-        return ActionResult.SUCCESS;
+    @Override
+    public void postDamageEntity(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+        stack.damage(2, attacker, EquipmentSlot.MAINHAND);
     }
 }
