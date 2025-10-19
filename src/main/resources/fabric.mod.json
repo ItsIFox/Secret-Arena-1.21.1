@@ -11,7 +11,7 @@
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/ItsIFox/Secret-Arena-1.21.1"
 	},
-	"license": "CC0-1.0",
+	"license": "ARR",
 	"icon": "assets/secret_arena/icon.png",
 	"environment": "*",
 	"entrypoints": {
