@@ -1,10 +1,8 @@
 package net.ifox.secret_arena;
 
 import net.ifox.secret_arena.block.ModBlocks;
-import net.ifox.secret_arena.item.ModItems;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
-import net.fabricmc.fabric.api.client.rendering.v1.BuiltinItemRendererRegistry;
 import net.minecraft.client.render.RenderLayer;
 
 
