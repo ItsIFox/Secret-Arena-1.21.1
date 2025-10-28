@@ -25,6 +25,8 @@ public class ModBlocks {
             new ConeBlock(AbstractBlock.Settings.create().strength(0.1F).resistance(3).mapColor(MapColor.TERRACOTTA_RED).sounds(BlockSoundGroup.BAMBOO_WOOD)));
     public static final Block WOOD_CRATE = registerBlock( "wood_crate",
             new CrateBlock(AbstractBlock.Settings.create().strength(2).resistance(2).mapColor(MapColor.OAK_TAN).sounds(BlockSoundGroup.WOOD).burnable()));
+    public static final Block LUNAPLUSH = registerBlock( "lunaplush",
+            new Block(AbstractBlock.Settings.create().strength(-1).resistance(6).mapColor(MapColor.PALE_YELLOW)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

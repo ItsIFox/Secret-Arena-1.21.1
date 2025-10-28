@@ -18,6 +18,7 @@ public class ModItemsGroup {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.CROWBAR);
                         entries.add(ModBlocks.CONE);
+                        entries.add(ModBlocks.LUNAPLUSH);
                         entries.add(ModBlocks.WOOD_CRATE);
                         entries.add(ModBlocks.CHECKER);
                         entries.add(ModBlocks.CHECKER_STAIRS);

@@ -11,5 +11,6 @@ public class SecretArenaClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CONE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LUNAPLUSH, RenderLayer.getCutout());
     }
 }

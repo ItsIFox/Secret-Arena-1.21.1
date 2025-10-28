@@ -2,10 +2,12 @@
   "itemgroup.secret_arena_items_group": "Secret Arena",
   "item.secret_arena.crowbar": "Crowbar",
   "block.secret_arena.cone": "Cone",
+  "block.secret_arena.lunaplush": "Lunaplush",
   "block.secret_arena.wood_crate": "Wooden Crate",
   "block.secret_arena.checker": "Checker Tiles",
   "block.secret_arena.checker_slab": "Checker Tile Slab",
   "block.secret_arena.checker_stairs": "Checker Tile Stairs",
-  "block.secret_arena.dev_orange": "Orange DEV Tiles",
-  "block.secret_arena.dev_gray": "Gray DEV Tiles"
+  "block.secret_arena.dev_orange": "Orange Tiles",
+  "block.secret_arena.dev_gray": "Gray Tiles",
+  "biome.secret_arena.white_void": "White Void"
 }
