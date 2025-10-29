@@ -2,6 +2,7 @@ package net.ifox.secret_arena.mixin;
 
 import com.llamalad7.mixinextras.sugar.Local;
 import net.ifox.secret_arena.SecretArena;
+import net.ifox.secret_arena.block.ModBlocks;
 import net.ifox.secret_arena.item.ModItems;
 import net.minecraft.client.render.item.ItemModels;
 import net.minecraft.client.render.item.ItemRenderer;
@@ -35,7 +36,9 @@ public abstract class ItemRendererMixin {
         if (stack.getItem() == ModItems.CROWBAR && (renderMode == ModelTransformationMode.GUI || renderMode == ModelTransformationMode.GROUND || renderMode == ModelTransformationMode.FIXED)) {
             return getModels().getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(SecretArena.MOD_ID, "crowbar")));
         }
-
+        if (stack.getItem() == ModBlocks.LUNAPLUSH.asItem() && (renderMode == ModelTransformationMode.GUI || renderMode == ModelTransformationMode.GROUND || renderMode == ModelTransformationMode.FIXED)) {
+            return getModels().getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(SecretArena.MOD_ID, "lunaplush")));
+        }
         return bakedModel;
     }
 
@@ -47,6 +50,9 @@ public abstract class ItemRendererMixin {
     public BakedModel getHeldItemModelMixin(BakedModel bakedModel, @Local(argsOnly = true) ItemStack stack) {
         if (stack.getItem() == ModItems.CROWBAR) {
             return this.models.getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(SecretArena.MOD_ID, "crowbar_in_hand")));
+        }
+        if (stack.getItem() == ModBlocks.LUNAPLUSH.asItem()) {
+            return this.models.getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(SecretArena.MOD_ID, "lunaplush_in_hand")));
         }
 
         return bakedModel;

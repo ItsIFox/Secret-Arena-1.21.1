@@ -1,3 +1,6 @@
 {
-  "parent": "secret_arena:block/lunaplush"
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "secret_arena:item/lunaplush"
+  }
 }
