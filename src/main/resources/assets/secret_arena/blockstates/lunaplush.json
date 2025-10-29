@@ -1,6 +1,18 @@
 {
   "variants": {
-    "": {
+    "facing=east": {
+      "model": "secret_arena:block/lunaplush",
+      "y": 180
+    },
+    "facing=north": {
+      "model": "secret_arena:block/lunaplush",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "secret_arena:block/lunaplush",
+      "y": 270
+    },
+    "facing=west": {
       "model": "secret_arena:block/lunaplush"
     }
   }

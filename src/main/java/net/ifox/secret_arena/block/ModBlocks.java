@@ -2,6 +2,7 @@ package net.ifox.secret_arena.block;
 
 import net.ifox.secret_arena.SecretArena;
 import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -12,21 +13,29 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
 
     public static final Block CHECKER = registerBlock( "checker",
-        new Block(AbstractBlock.Settings.create().strength(-1).resistance(6).mapColor(MapColor.PALE_YELLOW)));
+        new Block(AbstractBlock.Settings.create()
+                .strength(-1).resistance(6).mapColor(MapColor.PALE_YELLOW)));
     public static final Block CHECKER_SLAB = registerBlock( "checker_slab",
-            new SlabBlock(AbstractBlock.Settings.create().strength(-1).resistance(6).mapColor(MapColor.PALE_YELLOW)));
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .strength(-1).resistance(6).mapColor(MapColor.PALE_YELLOW)));
     public static final Block CHECKER_STAIRS = registerBlock( "checker_stairs",
-           new StairsBlock(CHECKER.getDefaultState(),AbstractBlock.Settings.create().strength(-1).resistance(6).mapColor(MapColor.PALE_YELLOW)));
+           new StairsBlock(CHECKER.getDefaultState(),AbstractBlock.Settings.create()
+                   .strength(-1).resistance(6).mapColor(MapColor.PALE_YELLOW)));
     public static final Block DEV_ORANGE = registerBlock( "dev_orange",
-            new Block(AbstractBlock.Settings.create().strength(8).resistance(600).mapColor(MapColor.ORANGE).requiresTool()));
+            new Block(AbstractBlock.Settings.create()
+                    .strength(8).resistance(600).mapColor(MapColor.ORANGE).requiresTool()));
     public static final Block DEV_GRAY = registerBlock( "dev_gray",
-            new Block(AbstractBlock.Settings.create().strength(8).resistance(600).mapColor(MapColor.STONE_GRAY).requiresTool()));
+            new Block(AbstractBlock.Settings.create()
+                    .strength(8).resistance(600).mapColor(MapColor.STONE_GRAY).requiresTool()));
     public static final Block CONE = registerBlock( "cone",
-            new ConeBlock(AbstractBlock.Settings.create().strength(0.1F).resistance(3).mapColor(MapColor.TERRACOTTA_RED).sounds(BlockSoundGroup.BAMBOO_WOOD)));
+            new ConeBlock(AbstractBlock.Settings.create()
+                    .strength(0.2F).resistance(3).mapColor(MapColor.TERRACOTTA_RED).sounds(BlockSoundGroup.BAMBOO_WOOD)));
     public static final Block WOOD_CRATE = registerBlock( "wood_crate",
-            new CrateBlock(AbstractBlock.Settings.create().strength(2).resistance(2).mapColor(MapColor.OAK_TAN).sounds(BlockSoundGroup.WOOD).burnable()));
+            new CrateBlock(AbstractBlock.Settings.create()
+                    .strength(2).resistance(2).mapColor(MapColor.OAK_TAN).sounds(BlockSoundGroup.WOOD).burnable()));
     public static final Block LUNAPLUSH = registerBlock( "lunaplush",
-            new Block(AbstractBlock.Settings.create().strength(-1).resistance(6).mapColor(MapColor.PALE_YELLOW)));
+            new PlushBlock(AbstractBlock.Settings.create()
+                    .strength(0.2F).mapColor(MapColor.PURPLE).sounds(BlockSoundGroup.WOOL).burnable().pistonBehavior(PistonBehavior.DESTROY)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
