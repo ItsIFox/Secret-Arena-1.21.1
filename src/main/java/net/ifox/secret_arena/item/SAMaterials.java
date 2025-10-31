@@ -10,8 +10,8 @@ import net.minecraft.registry.tag.BlockTags;
 
 import net.minecraft.registry.tag.TagKey;
 
-public enum ModMaterials implements ToolMaterial {
-    OTHERWORLD(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 512, 6.0F, 2.0F, 16, () -> Ingredient.ofItems(ModItems.CROWBAR));
+public enum SAMaterials implements ToolMaterial {
+    OTHERWORLD(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 512, 6.0F, 2.0F, 16, () -> Ingredient.ofItems(SAItems.CROWBAR));
 
     private final TagKey<Block> inverseTag;
     private final int itemDurability;
@@ -20,7 +20,7 @@ public enum ModMaterials implements ToolMaterial {
     private final int enchantability;
     private final Supplier<Ingredient> repairIngredient;
 
-    private ModMaterials(
+    private SAMaterials(
             final TagKey<Block> inverseTag,
             final int itemDurability,
             final float miningSpeed,

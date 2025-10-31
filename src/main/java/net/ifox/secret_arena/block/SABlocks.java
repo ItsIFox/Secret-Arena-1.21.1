@@ -10,7 +10,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
-public class ModBlocks {
+public class SABlocks {
 
     public static final Block CHECKER = registerBlock( "checker",
         new Block(AbstractBlock.Settings.create()

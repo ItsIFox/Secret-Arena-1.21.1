@@ -2,9 +2,9 @@ package net.ifox.secret_arena;
 
 import net.fabricmc.api.ModInitializer;
 
-import net.ifox.secret_arena.block.ModBlocks;
-import net.ifox.secret_arena.item.ModItems;
-import net.ifox.secret_arena.item.ModItemsGroup;
+import net.ifox.secret_arena.block.SABlocks;
+import net.ifox.secret_arena.item.SAItems;
+import net.ifox.secret_arena.item.SAItemsGroup;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -14,8 +14,8 @@ public class SecretArena implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModItemsGroup.registerItemsGroup();
-		ModItems.registerModItems();
-		ModBlocks.registerModBlocks();
+		SAItemsGroup.registerItemsGroup();
+		SAItems.registerModItems();
+		SABlocks.registerModBlocks();
 	}
 }

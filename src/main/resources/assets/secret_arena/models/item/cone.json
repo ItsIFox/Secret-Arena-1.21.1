@@ -1,3 +1,4 @@
 {
-  "parent": "secret_arena:block/cone"
+  "parent": "secret_arena:block/cone",
+  "gui_light": "front"
 }

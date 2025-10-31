@@ -2,8 +2,8 @@ package net.ifox.secret_arena.mixin;
 
 import com.llamalad7.mixinextras.sugar.Local;
 import net.ifox.secret_arena.SecretArena;
-import net.ifox.secret_arena.block.ModBlocks;
-import net.ifox.secret_arena.item.ModItems;
+import net.ifox.secret_arena.block.SABlocks;
+import net.ifox.secret_arena.item.SAItems;
 import net.minecraft.client.render.item.ItemModels;
 import net.minecraft.client.render.item.ItemRenderer;
 import net.minecraft.client.render.model.BakedModel;
@@ -33,10 +33,10 @@ public abstract class ItemRendererMixin {
             argsOnly = true
     )
     public BakedModel renderItem(BakedModel bakedModel, @Local(argsOnly = true) ItemStack stack, @Local(argsOnly = true) ModelTransformationMode renderMode) {
-        if (stack.getItem() == ModItems.CROWBAR && (renderMode == ModelTransformationMode.GUI || renderMode == ModelTransformationMode.GROUND || renderMode == ModelTransformationMode.FIXED)) {
+        if (stack.getItem() == SAItems.CROWBAR && (renderMode == ModelTransformationMode.GUI || renderMode == ModelTransformationMode.GROUND || renderMode == ModelTransformationMode.FIXED)) {
             return getModels().getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(SecretArena.MOD_ID, "crowbar")));
         }
-        if (stack.getItem() == ModBlocks.LUNAPLUSH.asItem() && (renderMode == ModelTransformationMode.GUI || renderMode == ModelTransformationMode.GROUND || renderMode == ModelTransformationMode.FIXED)) {
+        if (stack.getItem() == SABlocks.LUNAPLUSH.asItem() && (renderMode == ModelTransformationMode.GUI || renderMode == ModelTransformationMode.GROUND || renderMode == ModelTransformationMode.FIXED)) {
             return getModels().getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(SecretArena.MOD_ID, "lunaplush")));
         }
         return bakedModel;
@@ -48,10 +48,10 @@ public abstract class ItemRendererMixin {
             ordinal = 1
     )
     public BakedModel getHeldItemModelMixin(BakedModel bakedModel, @Local(argsOnly = true) ItemStack stack) {
-        if (stack.getItem() == ModItems.CROWBAR) {
+        if (stack.getItem() == SAItems.CROWBAR) {
             return this.models.getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(SecretArena.MOD_ID, "crowbar_in_hand")));
         }
-        if (stack.getItem() == ModBlocks.LUNAPLUSH.asItem()) {
+        if (stack.getItem() == SABlocks.LUNAPLUSH.asItem()) {
             return this.models.getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(SecretArena.MOD_ID, "lunaplush_in_hand")));
         }
 

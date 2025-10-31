@@ -10,14 +10,15 @@ import net.minecraft.world.biome.BiomeEffects;
 import net.minecraft.world.biome.SpawnSettings;
 
 
-public class ModBiomes {
-    public static final RegistryKey<Biome> WHITE_VOID = RegistryKey.of(RegistryKeys.BIOME,
-            Identifier.of(SecretArena.MOD_ID,"white_void"));
+public class SABiomes {
+    public static final RegistryKey<Biome> LIGHT_VOID = RegistryKey.of(RegistryKeys.BIOME,
+            Identifier.of(SecretArena.MOD_ID,"light_void"));
+    public static final RegistryKey<Biome> DARK_VOID = RegistryKey.of(RegistryKeys.BIOME,
+            Identifier.of(SecretArena.MOD_ID,"dark_void"));
 
     public static void bootstrap(Registerable<Biome> context) {
-        context.register(WHITE_VOID, secretBiome(context));
+        context.register(LIGHT_VOID, secretBiome(context));
     }
-
     public static Biome secretBiome(Registerable<Biome> context) {
         SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
 
