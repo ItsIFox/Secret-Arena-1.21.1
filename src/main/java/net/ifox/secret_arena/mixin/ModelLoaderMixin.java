@@ -1,6 +1,5 @@
 package net.ifox.secret_arena.mixin;
 
-
 import net.ifox.secret_arena.SecretArena;
 import net.minecraft.client.render.model.ModelLoader;
 import net.minecraft.client.util.ModelIdentifier;

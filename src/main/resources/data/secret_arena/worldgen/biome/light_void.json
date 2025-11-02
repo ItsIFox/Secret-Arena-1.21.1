@@ -1,7 +1,7 @@
 {
   "temperature": 0.5,
   "downfall": 0.5,
-  "has_precipitation": true,
+  "has_precipitation": false,
   "effects": {
     "sky_color": 16119285,
     "fog_color": 15461355,
@@ -13,5 +13,23 @@
   "spawners": {},
   "spawn_costs": {},
   "carvers": {},
-  "features": []
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "secret_arena:place_cone_small",
+      "secret_arena:place_cone_medium",
+      "secret_arena:place_wood_crate_small",
+      "secret_arena:place_wood_crate_medium",
+      "secret_arena:place_wood_crate_large"
+    ],
+    []
+  ]
 }
