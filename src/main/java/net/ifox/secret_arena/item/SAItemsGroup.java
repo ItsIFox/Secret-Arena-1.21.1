@@ -17,8 +17,9 @@ public class SAItemsGroup {
                     .displayName(Text.translatable("itemgroup.secret_arena_items_group"))
                     .entries((displayContext, entries) -> {
                         entries.add(SAItems.CROWBAR);
-                        entries.add(SABlocks.CONE);
+                        entries.add(SABlocks.HURT_TRIGGER);
                         entries.add(SABlocks.LUNAPLUSH);
+                        entries.add(SABlocks.CONE);
                         entries.add(SABlocks.WOOD_CRATE);
                         entries.add(SABlocks.CHECKER);
                         entries.add(SABlocks.CHECKER_STAIRS);
