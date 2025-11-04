@@ -1,5 +1,5 @@
 {
-  "type": "secret_arena:secret_void_type",
+  "type": "secret_arena:super_void_type",
   "generator": {
     "type": "minecraft:flat",
     "settings": {

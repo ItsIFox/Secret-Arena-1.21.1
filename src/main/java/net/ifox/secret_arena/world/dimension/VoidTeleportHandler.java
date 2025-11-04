@@ -7,35 +7,35 @@ import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.Identifier;
 
 public class VoidTeleportHandler {
-    private static final Identifier SECRET_VOID_DIMENSION_ID = Identifier.of("secret_arena", "secret_void");
+    private static final Identifier SUPER_VOID_DIMENSION_ID = Identifier.of("secret_arena", "super_void");
 
     public static void register() {
         ServerLivingEntityEvents.ALLOW_DAMAGE.register((entity, source, amount) -> {
             // Only handle players and void damage
             if (entity instanceof ServerPlayerEntity player &&
                     source.isOf(net.minecraft.entity.damage.DamageTypes.OUT_OF_WORLD) &&
-                    !player.getWorld().getRegistryKey().getValue().equals(SECRET_VOID_DIMENSION_ID)) {
+                    !player.getWorld().getRegistryKey().getValue().equals(SUPER_VOID_DIMENSION_ID)) {
 
-                teleportToSecretVoid(player);
+                teleportToSuperVoid(player);
                 return false; // Cancel the damage
             }
             return true; // Allow normal damage processing
         });
     }
 
-    private static void teleportToSecretVoid(ServerPlayerEntity player) {
-        ServerWorld secretVoidWorld = player.getServer().getWorld(
-                net.minecraft.registry.RegistryKey.of(RegistryKeys.WORLD, SECRET_VOID_DIMENSION_ID)
+    private static void teleportToSuperVoid(ServerPlayerEntity player) {
+        ServerWorld superVoidWorld = player.getServer().getWorld(
+                net.minecraft.registry.RegistryKey.of(RegistryKeys.WORLD, SUPER_VOID_DIMENSION_ID)
         );
 
-        if (secretVoidWorld != null) {
+        if (superVoidWorld != null) {
             // Keep X and Z coordinates, teleport to exact Y=0 in secret_void
             double x = player.getX();
             double z = player.getZ();
 
             // Direct teleport to Y=0 - player will fall if there's no ground!
             player.teleport(
-                    secretVoidWorld,
+                    superVoidWorld,
                     x, 0.0, z, // Exact Y=0 - no safety checks!
                     player.getYaw(), player.getPitch()
             );

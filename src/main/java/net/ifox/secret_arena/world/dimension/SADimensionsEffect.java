@@ -18,7 +18,7 @@ public class SADimensionsEffect extends DimensionEffects {
 
     @Override
     public boolean useThickFog(int camX, int camY) {
-        return true;
+        return false;
     }
 
     @Nullable
