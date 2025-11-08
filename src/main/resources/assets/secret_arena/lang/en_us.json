@@ -10,5 +10,6 @@
   "block.secret_arena.dev_orange": "Orange Tiles",
   "block.secret_arena.dev_gray": "Gray Tiles",
   "biome.secret_arena.light_void": "Light Void",
-  "biome.secret_arena.dark_void": "Dark Void"
+  "biome.secret_arena.dark_void": "Dark Void",
+  "effect.secret_arena.seasickness": "Seasickness"
 }

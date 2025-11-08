@@ -45,11 +45,6 @@ public class CrowbarItem extends ToolItem {
     }
 
     @Override
-    public boolean canMine(BlockState state, World world, BlockPos pos, PlayerEntity miner) {
-        return !miner.isCreative();
-    }
-
-    @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         return true;
     }
