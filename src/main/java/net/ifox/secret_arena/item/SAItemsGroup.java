@@ -17,13 +17,17 @@ public class SAItemsGroup {
                     .displayName(Text.translatable("itemgroup.secret_arena_items_group"))
                     .entries((displayContext, entries) -> {
                         entries.add(SAItems.CROWBAR);
-                        entries.add(SABlocks.HURT_TRIGGER);
                         entries.add(SABlocks.LUNAPLUSH);
                         entries.add(SABlocks.CONE);
                         entries.add(SABlocks.WOOD_CRATE);
                         entries.add(SABlocks.CHECKER);
                         entries.add(SABlocks.CHECKER_STAIRS);
                         entries.add(SABlocks.CHECKER_SLAB);
+                        entries.add(SABlocks.CHECKER_WALL);
+                        entries.add(SABlocks.MISSING);
+                        entries.add(SABlocks.MISSING_STAIRS);
+                        entries.add(SABlocks.MISSING_SLAB);
+                        entries.add(SABlocks.MISSING_WALL);
                         entries.add(SABlocks.DEV_ORANGE);
                         entries.add(SABlocks.DEV_GRAY);
                     }).build());

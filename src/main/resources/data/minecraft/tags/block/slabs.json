@@ -1,5 +1,6 @@
 {
   "values": [
-    "secret_arena:checker_slab"
+    "secret_arena:checker_slab",
+    "secret_arena:missing_slab"
   ]
 }

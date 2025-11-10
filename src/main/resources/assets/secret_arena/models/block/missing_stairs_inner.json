@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "secret_arena:block/missing",
+    "side": "secret_arena:block/missing",
+    "top": "secret_arena:block/missing"
+  }
+}

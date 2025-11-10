@@ -17,16 +17,33 @@ public class SABlocks {
                 .strength(-1).resistance(6)
                 .mapColor(MapColor.PALE_YELLOW))
     );
-    public static final Block CHECKER_SLAB = registerBlock( "checker_slab",
-            new SlabBlock(AbstractBlock.Settings.create()
-                    .strength(-1).resistance(6)
-                    .mapColor(MapColor.PALE_YELLOW))
-    );
     public static final Block CHECKER_STAIRS = registerBlock( "checker_stairs",
-           new StairsBlock(CHECKER.getDefaultState(),AbstractBlock.Settings.create()
-                   .strength(-1).resistance(6)
-                   .mapColor(MapColor.PALE_YELLOW))
+           new StairsBlock(CHECKER.getDefaultState(),AbstractBlock.Settings.copy(CHECKER))
     );
+    public static final Block CHECKER_SLAB = registerBlock( "checker_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(CHECKER))
+    );
+    public static final Block CHECKER_WALL = registerBlock( "checker_wall",
+            new WallBlock(AbstractBlock.Settings.copy(CHECKER)
+                    .solid())
+    );
+
+    public static final Block MISSING = registerBlock( "missing",
+            new Block(AbstractBlock.Settings.create()
+                    .strength(-1).resistance(6)
+                    .mapColor(MapColor.MAGENTA))
+    );
+    public static final Block MISSING_STAIRS = registerBlock( "missing_stairs",
+            new StairsBlock(MISSING.getDefaultState(),AbstractBlock.Settings.copy(MISSING))
+    );
+    public static final Block MISSING_SLAB = registerBlock( "missing_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(MISSING))
+    );
+    public static final Block MISSING_WALL = registerBlock( "missing_wall",
+            new WallBlock(AbstractBlock.Settings.copy(MISSING)
+                    .solid())
+    );
+
     public static final Block DEV_ORANGE = registerBlock( "dev_orange",
             new Block(AbstractBlock.Settings.create()
                     .strength(8).resistance(600)

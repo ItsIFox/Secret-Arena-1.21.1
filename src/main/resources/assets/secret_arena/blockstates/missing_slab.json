@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "secret_arena:block/missing_slab"
+    },
+    "type=double": {
+      "model": "secret_arena:block/missing"
+    },
+    "type=top": {
+      "model": "secret_arena:block/missing_slab_top"
+    }
+  }
+}
