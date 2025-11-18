@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "secret_arena:weighted_companion_cube"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "secret_arena:blocks/weighted_companion_cube"
+}
