@@ -11,36 +11,29 @@ public class VoidTeleportHandler {
 
     public static void register() {
         ServerLivingEntityEvents.ALLOW_DAMAGE.register((entity, source, amount) -> {
-            // Only handle players and void damage
             if (entity instanceof ServerPlayerEntity player &&
                     source.isOf(net.minecraft.entity.damage.DamageTypes.OUT_OF_WORLD) &&
                     !player.getWorld().getRegistryKey().getValue().equals(SUPER_VOID_DIMENSION_ID)) {
-
                 teleportToSuperVoid(player);
-                return false; // Cancel the damage
+                return false;
             }
-            return true; // Allow normal damage processing
+            return true;
         });
     }
-
     private static void teleportToSuperVoid(ServerPlayerEntity player) {
         ServerWorld superVoidWorld = player.getServer().getWorld(
                 net.minecraft.registry.RegistryKey.of(RegistryKeys.WORLD, SUPER_VOID_DIMENSION_ID)
         );
 
         if (superVoidWorld != null) {
-            // Keep X and Z coordinates, teleport to exact Y=0 in secret_void
             double x = player.getX();
             double z = player.getZ();
-
-            // Direct teleport to Y=0 - player will fall if there's no ground!
             player.teleport(
                     superVoidWorld,
-                    x, 0.0, z, // Exact Y=0 - no safety checks!
+                    x, 0.0, z,
                     player.getYaw(), player.getPitch()
             );
-
-            player.sendMessage(net.minecraft.text.Text.literal("CONGRATULATIONS AND WELCOME PLEASE ENTER WITH CAUTION YOU ARE NOT WELCOME HERE"), false);
+            player.sendMessage(net.minecraft.text.Text.literal("You have been cast to the void..."), true);
         }
     }
 }

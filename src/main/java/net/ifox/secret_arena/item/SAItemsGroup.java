@@ -19,14 +19,11 @@ public class SAItemsGroup {
                         entries.add(SAItems.CROWBAR);
                         entries.add(SABlocks.LUNAPLUSH);
                         entries.add(SABlocks.CONE);
-                        entries.add(SABlocks.WEIGHTED_CUBE);
-                        entries.add(SABlocks.WEIGHTED_COMPANION_CUBE);
                         entries.add(SABlocks.WOOD_CRATE);
                         entries.add(SABlocks.CHECKER);
                         entries.add(SABlocks.CHECKER_STAIRS);
                         entries.add(SABlocks.CHECKER_SLAB);
                         entries.add(SABlocks.CHECKER_WALL);
-                        entries.add(SABlocks.GAQ9_CUBE);
                         entries.add(SABlocks.MISSING);
                         entries.add(SABlocks.MISSING_STAIRS);
                         entries.add(SABlocks.MISSING_SLAB);

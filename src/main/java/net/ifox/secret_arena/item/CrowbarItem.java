@@ -2,7 +2,6 @@ package net.ifox.secret_arena.item;
 
 
 
-import net.minecraft.block.BlockState;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.AttributeModifierSlot;
 import net.minecraft.component.type.AttributeModifiersComponent;
@@ -11,13 +10,10 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolItem;
 import net.minecraft.item.ToolMaterial;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.World;
 
 
 public class CrowbarItem extends ToolItem {

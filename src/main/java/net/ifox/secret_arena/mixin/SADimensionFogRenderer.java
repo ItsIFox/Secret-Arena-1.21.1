@@ -17,11 +17,8 @@ public class SADimensionFogRenderer {
     @Inject(method = "applyFog", at = @At("HEAD"), cancellable = true)
     private static void applyShortRenderDistanceFog(Camera camera, BackgroundRenderer.FogType fogType, float viewDistance, boolean thickFog, float tickDelta, CallbackInfo ci) {
         World world = camera.getFocusedEntity().getWorld();
-
-        // Check if we're in the secret_void dimension
         if (world.getRegistryKey().getValue().equals(SUPER_VOID_DIMENSION_ID)) {
             if (fogType == BackgroundRenderer.FogType.FOG_TERRAIN) {
-                // Ultra-short fog distances to simulate render distance 2
                 com.mojang.blaze3d.systems.RenderSystem.setShaderFogStart(8.0f);
                 com.mojang.blaze3d.systems.RenderSystem.setShaderFogEnd(16.0f);
                 ci.cancel();

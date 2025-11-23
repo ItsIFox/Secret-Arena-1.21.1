@@ -3,9 +3,6 @@
   "item.secret_arena.crowbar": "Crowbar",
   "block.secret_arena.cone": "Cone",
   "block.secret_arena.lunaplush": "Lunaplush",
-  "block.secret_arena.gaq9_cube": "Gaq9Cube",
-  "block.secret_arena.weighted_cube": "Weighted Cube",
-  "block.secret_arena.weighted_companion_cube": "Weighted Companion Cube",
   "block.secret_arena.wood_crate": "Wooden Crate",
   "block.secret_arena.checker": "Checker Tiles",
   "block.secret_arena.checker_slab": "Checker Tile Slab",
@@ -18,6 +15,5 @@
   "block.secret_arena.dev_orange": "Orange Tiles",
   "block.secret_arena.dev_gray": "Gray Tiles",
   "biome.secret_arena.light_void": "Light Void",
-  "biome.secret_arena.dark_void": "Dark Void",
-  "effect.secret_arena.seasickness": "Seasickness"
+  "biome.secret_arena.dark_void": "Dark Void"
 }

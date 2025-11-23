@@ -10,10 +10,10 @@
   "effects": "secret_arena:super_void_effect",
   "coordinate_scale": 1,
   "ambient_light": 0.025,
-  "logical_height": 1024,
+  "logical_height": 512,
   "infiniburn": "#minecraft:infiniburn_overworld",
-  "min_y": -1024,
-  "height": 1024,
+  "min_y": -512,
+  "height": 512,
   "monster_spawn_light_level": {
     "type": "minecraft:uniform",
     "min_inclusive": 0,

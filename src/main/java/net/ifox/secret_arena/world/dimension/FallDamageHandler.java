@@ -5,17 +5,18 @@ import net.minecraft.util.Identifier;
 
 public class FallDamageHandler {
     private static final Identifier SUPER_VOID_DIMENSION_ID = Identifier.of("secret_arena", "super_void");
+    private static final float MAX_FALL_DAMAGE = 15.0f;
 
     public static void register() {
         ServerLivingEntityEvents.ALLOW_DAMAGE.register((entity, source, amount) -> {
             if (source.isOf(net.minecraft.entity.damage.DamageTypes.FALL)) {
                 if (entity.getWorld().getRegistryKey().getValue().equals(SUPER_VOID_DIMENSION_ID)) {
-                    // Apply reduced damage and cancel the original
-                    entity.damage(source, amount * 0.5f);
-                    return false; // Cancel original damage
+                    float cappedDamage = Math.min(amount, MAX_FALL_DAMAGE);
+                    entity.damage(entity.getDamageSources().outOfWorld(), cappedDamage);
+                    return false;
                 }
             }
-            return true; // Allow normal damage
+            return true;
         });
     }
 }

@@ -6,14 +6,12 @@ import org.jetbrains.annotations.Nullable;
 
 public class SADimensionsEffect extends DimensionEffects {
     public SADimensionsEffect() {
-        // Parameters: cloudsHeight, alternateSkyColor, skyType, brightenLighting, darkened
         super(Float.NaN, false, DimensionEffects.SkyType.NORMAL, false, false);
     }
 
     @Override
     public Vec3d adjustFogColor(Vec3d color, float sunHeight) {
-        // Completely override with pure black, ignoring the original color and sun height
-        return new Vec3d(0.0, 0.0, 0.0);
+        return color.multiply(0.15F);
     }
 
     @Override
@@ -24,13 +22,11 @@ public class SADimensionsEffect extends DimensionEffects {
     @Nullable
     @Override
     public float[] getFogColorOverride(float skyAngle, float tickDelta) {
-        // Return null to prevent any fog color overrides (like sunrise/sunset colors)
         return null;
     }
 
     @Override
     public boolean isAlternateSkyColor() {
-        // Return false to use normal sky color calculations
         return false;
     }
 }

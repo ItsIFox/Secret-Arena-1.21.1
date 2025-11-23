@@ -8,25 +8,10 @@ import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.util.ColorCode;
 import net.minecraft.util.Identifier;
 
 public class SABlocks {
 
-    public static final Block WEIGHTED_CUBE = registerBlock( "weighted_cube",
-            new ColoredFallingBlock(new ColorCode(0x7CA9CC)
-                    , AbstractBlock.Settings.create()
-                    .strength(1).resistance(3)
-                    .luminance(state -> 5)
-                    .mapColor(MapColor.LIGHT_BLUE))
-    );
-    public static final Block WEIGHTED_COMPANION_CUBE = registerBlock( "weighted_companion_cube",
-            new ColoredFallingBlock(new ColorCode(0xE4B5BD)
-                    , AbstractBlock.Settings.create()
-                    .strength(1).resistance(3)
-                    .luminance(state -> 5)
-                    .mapColor(MapColor.PINK))
-    );
     public static final Block CONE = registerBlock( "cone",
             new ConeBlock(AbstractBlock.Settings.create()
                     .strength(0.2F).resistance(3)
@@ -83,12 +68,6 @@ public class SABlocks {
             new PlushBlock(AbstractBlock.Settings.create()
                     .strength(0.2F)
                     .mapColor(MapColor.PURPLE).sounds(BlockSoundGroup.WOOL).burnable().pistonBehavior(PistonBehavior.DESTROY))
-    );
-    public static final Block GAQ9_CUBE = registerBlock( "gaq9_cube",
-            new ColoredFallingBlock(new ColorCode(0xFA00FA)
-                    , AbstractBlock.Settings.create()
-                    .strength(1).resistance(3)
-                    .mapColor(MapColor.MAGENTA))
     );
     public static final Block HURT_TRIGGER = registerBlock( "hurt_trigger",
             new HurtBlock(AbstractBlock.Settings.create()

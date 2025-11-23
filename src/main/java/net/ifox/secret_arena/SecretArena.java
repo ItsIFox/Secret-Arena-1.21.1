@@ -4,7 +4,6 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.ifox.secret_arena.block.SABlocks;
-import net.ifox.secret_arena.effect.SAEffects;
 import net.ifox.secret_arena.item.SAItems;
 import net.ifox.secret_arena.item.SAItemsGroup;
 import net.ifox.secret_arena.world.dimension.FallDamageHandler;
@@ -23,7 +22,6 @@ public class SecretArena implements ModInitializer {
 		SAItemsGroup.registerItemsGroup();
 		SAItems.registerModItems();
 		SABlocks.registerModBlocks();
-		SAEffects.registerEffects();
 		FuelRegistry.INSTANCE.add(SABlocks.WOOD_CRATE, 2400);
 	}
 }
