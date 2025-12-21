@@ -12,7 +12,7 @@
     "ground_state": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "secret_arena:checker"
+        "Name": "secret_arena:checker_tiles"
       }
     },
     "vegetation_feature": {

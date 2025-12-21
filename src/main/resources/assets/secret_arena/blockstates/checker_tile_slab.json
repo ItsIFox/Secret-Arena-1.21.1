@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "secret_arena:block/checker_tile_slab"
+    },
+    "type=double": {
+      "model": "secret_arena:block/checker_tiles"
+    },
+    "type=top": {
+      "model": "secret_arena:block/checker_tile_slab_top"
+    }
+  }
+}

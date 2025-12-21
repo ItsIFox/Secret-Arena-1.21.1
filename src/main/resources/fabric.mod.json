@@ -5,7 +5,7 @@
 	"name": "Secret Arena",
 	"description": "This is a public test of the mod do not distribute without permission",
 	"authors": [
-		"ItsIFox"
+		"Ayfery"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -16,13 +16,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.ifox.secret_arena.SecretArena"
+			"net.ayfery.secret_arena.SecretArena"
 		],
 		"fabric-datagen": [
-			"net.ifox.secret_arena.SecretArenaDataGenerator"
+			"net.ayfery.secret_arena.SecretArenaDataGenerator"
 		],
 		"client": [
-			"net.ifox.secret_arena.SecretArenaClient"
+			"net.ayfery.secret_arena.SecretArenaClient"
 		]
 	},
 	"mixins": [

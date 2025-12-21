@@ -13,7 +13,7 @@
         },
         {
           "height": 2,
-          "block": "secret_arena:checker"
+          "block": "secret_arena:checker_tiles"
         }
       ]
     }
