@@ -38,28 +38,28 @@ public class SABlocks {
                     .solid())
     );
 
-    public static final Block MISSING = registerBlock( "missing",
+    public static final Block MISSING_TILES = registerBlock( "missing_tiles",
             new Block(AbstractBlock.Settings.create()
                     .strength(-1).resistance(6)
                     .mapColor(MapColor.MAGENTA))
     );
-    public static final Block MISSING_STAIRS = registerBlock( "missing_stairs",
-            new StairsBlock(MISSING.getDefaultState(),AbstractBlock.Settings.copy(MISSING))
+    public static final Block MISSING_TILE_STAIRS = registerBlock( "missing_tile_stairs",
+            new StairsBlock(MISSING_TILES.getDefaultState(),AbstractBlock.Settings.copy(MISSING_TILES))
     );
-    public static final Block MISSING_SLAB = registerBlock( "missing_slab",
-            new SlabBlock(AbstractBlock.Settings.copy(MISSING))
+    public static final Block MISSING_TILE_SLAB = registerBlock( "missing_tile_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(MISSING_TILES))
     );
-    public static final Block MISSING_WALL = registerBlock( "missing_wall",
-            new WallBlock(AbstractBlock.Settings.copy(MISSING)
+    public static final Block MISSING_TILE_WALL = registerBlock( "missing_tile_wall",
+            new WallBlock(AbstractBlock.Settings.copy(MISSING_TILES)
                     .solid())
     );
 
-    public static final Block DEV_ORANGE = registerBlock( "dev_orange",
+    public static final Block ORANGE_TILES = registerBlock( "orange_tiles",
             new Block(AbstractBlock.Settings.create()
                     .strength(8).resistance(600)
                     .mapColor(MapColor.ORANGE).requiresTool())
     );
-    public static final Block DEV_GRAY = registerBlock( "dev_gray",
+    public static final Block GENERIC_TILES = registerBlock( "generic_tiles",
             new Block(AbstractBlock.Settings.create()
                     .strength(8).resistance(600)
                     .mapColor(MapColor.STONE_GRAY).requiresTool())

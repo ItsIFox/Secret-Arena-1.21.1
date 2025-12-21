@@ -8,12 +8,12 @@
   "block.secret_arena.checker_tile_slab": "Checker Tile Slab",
   "block.secret_arena.checker_tile_stairs": "Checker Tile Stairs",
   "block.secret_arena.checker_tile_wall": "Checker Tile Wall",
-  "block.secret_arena.missing": "Missing Tiles",
-  "block.secret_arena.missing_slab": "Missing Tile Slab",
-  "block.secret_arena.missing_stairs": "Missing Tile Stairs",
-  "block.secret_arena.missing_wall": "Missing Tile Wall",
-  "block.secret_arena.dev_orange": "Orange Tiles",
-  "block.secret_arena.dev_gray": "Gray Tiles",
+  "block.secret_arena.missing_tiles": "Missing Tiles",
+  "block.secret_arena.missing_tile_slab": "Missing Tile Slab",
+  "block.secret_arena.missing_tile_stairs": "Missing Tile Stairs",
+  "block.secret_arena.missing_tile_wall": "Missing Tile Wall",
+  "block.secret_arena.orange_tiles": "Orange Tiles",
+  "block.secret_arena.generic_tiles": "Generic Tiles",
   "biome.secret_arena.light_void": "Light Void",
   "biome.secret_arena.dark_void": "Dark Void"
 }

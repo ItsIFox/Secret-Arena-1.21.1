@@ -1,6 +1,6 @@
 {
   "values": [
     "secret_arena:checker_tile_wall",
-    "secret_arena:missing_wall"
+    "secret_arena:missing_tile_wall"
   ]
 }

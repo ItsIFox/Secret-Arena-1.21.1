@@ -24,12 +24,12 @@ public class SAItemsGroup {
                         entries.add(SABlocks.CHECKER_TILE_STAIRS);
                         entries.add(SABlocks.CHECKER_TILE_SLAB);
                         entries.add(SABlocks.CHECKER_TILE_WALL);
-                        entries.add(SABlocks.MISSING);
-                        entries.add(SABlocks.MISSING_STAIRS);
-                        entries.add(SABlocks.MISSING_SLAB);
-                        entries.add(SABlocks.MISSING_WALL);
-                        entries.add(SABlocks.DEV_ORANGE);
-                        entries.add(SABlocks.DEV_GRAY);
+                        entries.add(SABlocks.MISSING_TILES);
+                        entries.add(SABlocks.MISSING_TILE_STAIRS);
+                        entries.add(SABlocks.MISSING_TILE_SLAB);
+                        entries.add(SABlocks.MISSING_TILE_WALL);
+                        entries.add(SABlocks.ORANGE_TILES);
+                        entries.add(SABlocks.GENERIC_TILES);
                     }).build());
 
     public static void registerItemsGroup() {

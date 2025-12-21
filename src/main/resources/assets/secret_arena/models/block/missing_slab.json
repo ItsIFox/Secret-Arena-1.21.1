@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "secret_arena:block/missing",
-    "side": "secret_arena:block/missing",
-    "top": "secret_arena:block/missing"
-  }
-}

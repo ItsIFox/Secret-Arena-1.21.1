@@ -1,6 +1,6 @@
 {
   "values": [
-    "secret_arena:dev_orange",
-    "secret_arena:dev_gray"
+    "secret_arena:orange_tiles",
+    "secret_arena:generic_tiles"
   ]
 }
