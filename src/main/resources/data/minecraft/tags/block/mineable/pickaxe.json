@@ -1,6 +1,12 @@
 {
   "values": [
     "secret_arena:orange_tiles",
-    "secret_arena:generic_tiles"
+    "secret_arena:cut_orange_tiles",
+    "secret_arena:cut_orange_tile_stairs",
+    "secret_arena:cut_orange_tile_slab",
+    "secret_arena:generic_tiles",
+    "secret_arena:cut_generic_tiles",
+    "secret_arena:cut_generic_tile_stairs",
+    "secret_arena:cut_generic_tile_slab"
   ]
 }

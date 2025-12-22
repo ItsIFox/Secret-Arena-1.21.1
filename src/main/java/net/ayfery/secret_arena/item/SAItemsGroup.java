@@ -29,7 +29,13 @@ public class SAItemsGroup {
                         entries.add(SABlocks.MISSING_TILE_SLAB);
                         entries.add(SABlocks.MISSING_TILE_WALL);
                         entries.add(SABlocks.ORANGE_TILES);
+                        entries.add(SABlocks.CUT_ORANGE_TILES);
+                        entries.add(SABlocks.CUT_ORANGE_TILE_STAIRS);
+                        entries.add(SABlocks.CUT_ORANGE_TILE_SLAB);
                         entries.add(SABlocks.GENERIC_TILES);
+                        entries.add(SABlocks.CUT_GENERIC_TILES);
+                        entries.add(SABlocks.CUT_GENERIC_TILE_STAIRS);
+                        entries.add(SABlocks.CUT_GENERIC_TILE_SLAB);
                     }).build());
 
     public static void registerItemsGroup() {

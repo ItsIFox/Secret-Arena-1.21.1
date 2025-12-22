@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "secret_arena:block/cut_orange_tiles",
+    "side": "secret_arena:block/cut_orange_tiles",
+    "top": "secret_arena:block/cut_orange_tiles"
+  }
+}

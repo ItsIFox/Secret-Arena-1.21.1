@@ -59,10 +59,28 @@ public class SABlocks {
                     .strength(8).resistance(600)
                     .mapColor(MapColor.ORANGE).requiresTool())
     );
+    public static final Block CUT_ORANGE_TILES = registerBlock( "cut_orange_tiles",
+            new Block(AbstractBlock.Settings.copy(ORANGE_TILES))
+    );
+    public static final Block CUT_ORANGE_TILE_STAIRS = registerBlock( "cut_orange_tile_stairs",
+            new StairsBlock(ORANGE_TILES.getDefaultState(),AbstractBlock.Settings.copy(ORANGE_TILES))
+    );
+    public static final Block CUT_ORANGE_TILE_SLAB = registerBlock( "cut_orange_tile_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(ORANGE_TILES))
+    );
     public static final Block GENERIC_TILES = registerBlock( "generic_tiles",
             new Block(AbstractBlock.Settings.create()
                     .strength(8).resistance(600)
                     .mapColor(MapColor.STONE_GRAY).requiresTool())
+    );
+    public static final Block CUT_GENERIC_TILES = registerBlock( "cut_generic_tiles",
+            new Block(AbstractBlock.Settings.copy(GENERIC_TILES))
+    );
+    public static final Block CUT_GENERIC_TILE_STAIRS = registerBlock( "cut_generic_tile_stairs",
+            new StairsBlock(GENERIC_TILES.getDefaultState(),AbstractBlock.Settings.copy(GENERIC_TILES))
+    );
+    public static final Block CUT_GENERIC_TILE_SLAB = registerBlock( "cut_generic_tile_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(GENERIC_TILES))
     );
     public static final Block LUNAPLUSH = registerBlock( "lunaplush",
             new PlushBlock(AbstractBlock.Settings.create()
