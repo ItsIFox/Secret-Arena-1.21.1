@@ -1,0 +1,17 @@
+  {
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "secret_arena:generic_tiles"
+    }
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 4,
+    "id": "secret_arena:cut_generic_tiles"
+  }
+}
