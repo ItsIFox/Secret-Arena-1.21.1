@@ -5,13 +5,14 @@ import java.util.function.Supplier;
 
 import net.ayfery.secret_arena.utill.SATags;
 import net.minecraft.block.Block;
+import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
 import net.minecraft.registry.tag.TagKey;
 
 public enum SAMaterials implements ToolMaterial {
-    OTHERWORLD(SATags.Blocks.INCORRECT_FOR_OTHERWORLD_TOOL, 512, 6.0F, 2.0F, 16, () -> Ingredient.ofItems(SAItems.CROWBAR));
+    OTHERWORLD(SATags.Blocks.INCORRECT_FOR_OTHERWORLD_TOOL, 512, 6.0F, 2.0F, 16, () -> Ingredient.ofItems(Items.NETHERITE_SCRAP));
 
     private final TagKey<Block> inverseTag;
     private final int itemDurability;

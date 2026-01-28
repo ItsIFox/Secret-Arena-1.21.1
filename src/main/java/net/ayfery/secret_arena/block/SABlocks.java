@@ -41,6 +41,7 @@ public class SABlocks {
     public static final Block MISSING_TILES = registerBlock( "missing_tiles",
             new Block(AbstractBlock.Settings.create()
                     .strength(-1).resistance(6)
+                    .luminance(state -> 8)
                     .mapColor(MapColor.MAGENTA))
     );
     public static final Block MISSING_TILE_STAIRS = registerBlock( "missing_tile_stairs",
@@ -82,6 +83,34 @@ public class SABlocks {
     public static final Block CUT_GENERIC_TILE_SLAB = registerBlock( "cut_generic_tile_slab",
             new SlabBlock(AbstractBlock.Settings.copy(GENERIC_TILES))
     );
+
+    public static final Block POOL_TILES = registerBlock( "pool_tiles",
+            new Block(AbstractBlock.Settings.create()
+                    .strength(-1).resistance(8)
+                    .mapColor(MapColor.WHITE))
+    );
+    public static final Block POOL_TILE_STAIRS = registerBlock( "pool_tile_stairs",
+            new StairsBlock(POOL_TILES.getDefaultState(),AbstractBlock.Settings.copy(POOL_TILES))
+    );
+    public static final Block POOL_TILE_SLAB = registerBlock( "pool_tile_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(POOL_TILES))
+    );
+    public static final Block POOL_TILE_WALL = registerBlock( "pool_tile_wall",
+            new WallBlock(AbstractBlock.Settings.copy(POOL_TILES)
+                    .solid())
+    );
+    public static final Block ARTIFICIAL_LIGHT = registerBlock( "artificial_light",
+            new Block(AbstractBlock.Settings.create()
+                    .strength(-1)
+                    .sounds(BlockSoundGroup.GLASS)
+                    .luminance(state -> 15)
+                    .solidBlock(Blocks::never)
+                    .mapColor(MapColor.WHITE))
+    );
+    public static final Block ARTIFICIAL_LIGHT_WALL = registerBlock( "artificial_light_wall",
+            new WallBlock(AbstractBlock.Settings.copy(ARTIFICIAL_LIGHT))
+    );
+
     public static final Block LUNAPLUSH = registerBlock( "lunaplush",
             new PlushBlock(AbstractBlock.Settings.create()
                     .strength(0.2F)

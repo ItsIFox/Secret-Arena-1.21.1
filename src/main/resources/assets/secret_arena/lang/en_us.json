@@ -20,6 +20,12 @@
   "block.secret_arena.cut_generic_tiles": "Cut Generic Tiles",
   "block.secret_arena.cut_generic_tile_stairs": "Cut Generic Tile Stairs",
   "block.secret_arena.cut_generic_tile_slab": "Cut Generic Tile Slab",
+  "block.secret_arena.pool_tiles": "Pool Tiles",
+  "block.secret_arena.pool_tile_stairs": "Pool Tile Stairs",
+  "block.secret_arena.pool_tile_slab": "Pool Tile Slab",
+  "block.secret_arena.pool_tile_wall": "Pool Tile Wall",
+  "block.secret_arena.artificial_light": "Artificial Light",
+  "block.secret_arena.artificial_light_wall": "Artificial Light Wall",
   "biome.secret_arena.light_void": "Light Void",
   "biome.secret_arena.dark_void": "Dark Void"
 }

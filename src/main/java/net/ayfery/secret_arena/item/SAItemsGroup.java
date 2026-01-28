@@ -36,6 +36,12 @@ public class SAItemsGroup {
                         entries.add(SABlocks.CUT_GENERIC_TILES);
                         entries.add(SABlocks.CUT_GENERIC_TILE_STAIRS);
                         entries.add(SABlocks.CUT_GENERIC_TILE_SLAB);
+                        entries.add(SABlocks.ARTIFICIAL_LIGHT);
+                        entries.add(SABlocks.ARTIFICIAL_LIGHT_WALL);
+                        entries.add(SABlocks.POOL_TILES);
+                        entries.add(SABlocks.POOL_TILE_STAIRS);
+                        entries.add(SABlocks.POOL_TILE_SLAB);
+                        entries.add(SABlocks.POOL_TILE_WALL);
                     }).build());
 
     public static void registerItemsGroup() {
