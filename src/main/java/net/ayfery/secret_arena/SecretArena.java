@@ -1,5 +1,6 @@
 package net.ayfery.secret_arena;
 
+import net.ayfery.secret_arena.sound.SASounds;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
@@ -22,6 +23,7 @@ public class SecretArena implements ModInitializer {
 		SAItemsGroup.registerItemsGroup();
 		SAItems.registerModItems();
 		SABlocks.registerModBlocks();
+		SASounds.registerSounds();
 		FuelRegistry.INSTANCE.add(SABlocks.WOOD_CRATE, 2400);
 	}
 }

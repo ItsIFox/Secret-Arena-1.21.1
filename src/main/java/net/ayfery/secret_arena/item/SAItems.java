@@ -9,7 +9,7 @@ import net.minecraft.util.Identifier;
 
 public class SAItems {
     public static final Item CROWBAR = registerItems("crowbar", new CrowbarItem(SAMaterials.OTHERWORLD, new Item.Settings().attributeModifiers(CrowbarItem.createAttributeModifiers(SAMaterials.OTHERWORLD, 2, -0F))));
-    public static final Item POPPYCORN = registerItems("poppycorn", new Item(new Item.Settings().food(FoodComponents.BEEF)));
+    public static final Item POPPYCORN = registerItems("poppycorn", new Item(new Item.Settings().food(SAFoodComponents.POPPYCORN)));
     private static Item registerItems(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(SecretArena.MOD_ID, name), item);
     }

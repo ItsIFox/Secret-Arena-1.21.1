@@ -28,5 +28,6 @@
   "block.secret_arena.artificial_light": "Artificial Light",
   "block.secret_arena.artificial_light_wall": "Artificial Light Wall",
   "biome.secret_arena.light_void": "Light Void",
-  "biome.secret_arena.dark_void": "Dark Void"
+  "biome.secret_arena.dark_void": "Dark Void",
+  "message.secret_arena.welcome" : "You have been cast to the void..."
 }

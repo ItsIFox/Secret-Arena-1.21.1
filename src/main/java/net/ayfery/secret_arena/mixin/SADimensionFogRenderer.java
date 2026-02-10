@@ -25,7 +25,7 @@ public class SADimensionFogRenderer {
         World world = camera.getFocusedEntity().getWorld();
         if (world.getRegistryKey().getValue().equals(SUPER_VOID_DIMENSION_ID)) {
             if (camera.getFocusedEntity() instanceof PlayerEntity player) {
-                if (player.isCreative() || player.isSpectator()) {
+                if (player.isSpectator()) {
                     return;
                 }
             }

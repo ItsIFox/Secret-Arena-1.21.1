@@ -33,7 +33,7 @@ public class VoidTeleportHandler {
                     x, 0.0, z,
                     player.getYaw(), player.getPitch()
             );
-            player.sendMessage(net.minecraft.text.Text.literal("You have been cast to the void..."), true);
+            player.sendMessage(net.minecraft.text.Text.translatable("message.secret_arena.welcome"), true);
         }
     }
 }

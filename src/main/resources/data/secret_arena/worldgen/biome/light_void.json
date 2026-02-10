@@ -8,7 +8,8 @@
     "water_color": 7768221,
     "water_fog_color": 5597568,
     "grass_color": 10002580,
-    "foliage_color": 10922649
+    "foliage_color": 10922649,
+    "ambient_sound": "secret_arena:ambient_void_loop"
   },
   "spawners": {},
   "spawn_costs": {},
