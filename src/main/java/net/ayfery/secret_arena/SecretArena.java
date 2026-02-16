@@ -1,6 +1,5 @@
 package net.ayfery.secret_arena;
 
-import net.ayfery.secret_arena.sound.SASounds;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
@@ -9,6 +8,7 @@ import net.ayfery.secret_arena.item.SAItems;
 import net.ayfery.secret_arena.item.SAItemsGroup;
 import net.ayfery.secret_arena.world.dimension.FallDamageHandler;
 import net.ayfery.secret_arena.world.dimension.VoidTeleportHandler;
+import net.ayfery.secret_arena.sound.SASounds;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
