@@ -18,6 +18,7 @@ public class SecretArena implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		SAGamerules.register();
 		FallDamageHandler.register();
 		VoidTeleportHandler.register();
 		SAItemsGroup.registerItemsGroup();
