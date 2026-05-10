@@ -20,6 +20,8 @@ public class SecretArenaClient implements ClientModInitializer {
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(SABlocks.CONE, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(SABlocks.LUNAPLUSH, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(SABlocks.DRY_OAK_DOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(SABlocks.DRY_OAK_TRAPDOOR, RenderLayer.getCutout());
         DimensionRenderingRegistry.registerDimensionEffects(
                 Identifier.of("secret_arena", "super_void_effect"),
                 new SADimensionsEffect()

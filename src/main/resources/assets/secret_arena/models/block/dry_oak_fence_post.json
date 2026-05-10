@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_post",
+  "textures": {
+    "texture": "secret_arena:block/dry_oak_planks"
+  }
+}

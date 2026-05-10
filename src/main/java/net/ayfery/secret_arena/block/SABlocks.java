@@ -2,6 +2,7 @@ package net.ayfery.secret_arena.block;
 
 import net.ayfery.secret_arena.SecretArena;
 import net.minecraft.block.*;
+import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -119,6 +120,40 @@ public class SABlocks {
     public static final Block HURT_TRIGGER = registerBlock( "hurt_trigger",
             new HurtBlock(AbstractBlock.Settings.create()
                     .mapColor(MapColor.CLEAR).noCollision().allowsSpawning(Blocks::never).noBlockBreakParticles().pistonBehavior(PistonBehavior.DESTROY))
+    );
+
+    public static final Block DRY_OAK_PLANKS = registerBlock( "dry_oak_planks",
+            new Block(AbstractBlock.Settings.create()
+                    .strength(2).resistance(3)
+                    .sounds(BlockSoundGroup.WOOD)
+                    .solid()
+                    .mapColor(MapColor.MAGENTA)
+                    .instrument(NoteBlockInstrument.BASS)
+                    .burnable())
+    );
+    public static final Block DRY_OAK_STAIRS = registerBlock( "dry_oak_stairs",
+            new StairsBlock(DRY_OAK_PLANKS.getDefaultState(),AbstractBlock.Settings.copy(DRY_OAK_PLANKS))
+    );
+    public static final Block DRY_OAK_SLAB = registerBlock( "dry_oak_slab",
+            new SlabBlock(AbstractBlock.Settings.copy(DRY_OAK_PLANKS))
+    );
+    public static final Block DRY_OAK_BUTTON = registerBlock( "dry_oak_button",
+            new ButtonBlock(BlockSetType.OAK, 30, AbstractBlock.Settings.copy(DRY_OAK_PLANKS).noCollision().pistonBehavior(PistonBehavior.DESTROY))
+    );
+    public static final Block DRY_OAK_PRESSURE_PLATE = registerBlock( "dry_oak_pressure_plate",
+            new PressurePlateBlock(BlockSetType.OAK,AbstractBlock.Settings.copy(DRY_OAK_PLANKS).noCollision().pistonBehavior(PistonBehavior.DESTROY))
+    );
+    public static final Block DRY_OAK_FENCE = registerBlock( "dry_oak_fence",
+            new FenceBlock(AbstractBlock.Settings.copy(DRY_OAK_PLANKS))
+    );
+    public static final Block DRY_OAK_FENCE_GATE = registerBlock( "dry_oak_fence_gate",
+            new FenceGateBlock(WoodType.OAK, AbstractBlock.Settings.copy(DRY_OAK_PLANKS))
+    );
+    public static final Block DRY_OAK_DOOR = registerBlock( "dry_oak_door",
+            new DoorBlock(BlockSetType.OAK,AbstractBlock.Settings.copy(DRY_OAK_PLANKS).nonOpaque().pistonBehavior(PistonBehavior.DESTROY))
+    );
+    public static final Block DRY_OAK_TRAPDOOR = registerBlock( "dry_oak_trapdoor",
+            new TrapdoorBlock(BlockSetType.OAK,AbstractBlock.Settings.copy(DRY_OAK_PLANKS).nonOpaque().allowsSpawning(Blocks::never))
     );
 
 

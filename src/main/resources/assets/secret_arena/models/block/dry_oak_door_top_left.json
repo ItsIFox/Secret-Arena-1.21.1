@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_left",
+  "textures": {
+    "bottom": "secret_arena:block/dry_oak_door_bottom",
+    "top": "secret_arena:block/dry_oak_door_top"
+  }
+}

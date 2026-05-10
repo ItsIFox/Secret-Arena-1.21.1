@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "secret_arena:block/dry_oak_pressure_plate"
+    },
+    "powered=true": {
+      "model": "secret_arena:block/dry_oak_pressure_plate_down"
+    }
+  }
+}

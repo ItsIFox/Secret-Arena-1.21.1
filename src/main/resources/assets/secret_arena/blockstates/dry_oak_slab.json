@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "secret_arena:block/dry_oak_slab"
+    },
+    "type=double": {
+      "model": "secret_arena:block/dry_oak_planks"
+    },
+    "type=top": {
+      "model": "secret_arena:block/dry_oak_slab_top"
+    }
+  }
+}
