@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.15,
+  "ingredient": {
+    "item": "secret_arena:lunaplush"
+  },
+  "result": {
+    "id": "secret_arena:missing_tiles"
+  }
+}

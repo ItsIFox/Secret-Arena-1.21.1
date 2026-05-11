@@ -36,7 +36,7 @@ public class VoidTeleportHandler {
             double z = player.getZ();
             player.teleport(
                     superVoidWorld,
-                    x, 0.0, z,
+                    x, 1.0, z,
                     player.getYaw(), player.getPitch()
             );
             player.sendMessage(net.minecraft.text.Text.translatable("message.secret_arena.welcome"), true);

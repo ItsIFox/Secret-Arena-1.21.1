@@ -34,7 +34,7 @@
                 {
                   "type": "minecraft:item",
                   "name": "minecraft:stick",
-                  "weight": 46,
+                  "weight": 72,
                   "conditions": [],
                   "functions": [
                     {
@@ -50,7 +50,7 @@
                 {
                   "type": "minecraft:item",
                   "name": "secret_arena:poppycorn",
-                  "weight": 16,
+                  "weight": 39,
                   "functions": [
                     {
                       "function": "minecraft:set_count",
@@ -64,8 +64,13 @@
                 },
                 {
                   "type": "minecraft:item",
+                  "name": "secret_arena:wood_crate",
+                  "weight": 16
+                },
+                {
+                  "type": "minecraft:item",
                   "name": "secret_arena:lunaplush",
-                  "weight": 2
+                  "weight": 1
                 }
               ]
             }

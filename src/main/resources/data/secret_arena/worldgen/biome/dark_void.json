@@ -29,7 +29,9 @@
       "secret_arena:place_cone_medium",
       "secret_arena:place_wood_crate_small",
       "secret_arena:place_wood_crate_medium",
-      "secret_arena:place_wood_crate_large"
+      "secret_arena:place_wood_crate_large",
+      "secret_arena:place_cobblestone_tree",
+      "secret_arena:place_dry_tree"
     ],
     []
   ]
