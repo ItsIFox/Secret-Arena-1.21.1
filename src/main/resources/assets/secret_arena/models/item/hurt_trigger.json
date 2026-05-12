@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "secret_arena:item/hurt_trigger"
-  }
-}

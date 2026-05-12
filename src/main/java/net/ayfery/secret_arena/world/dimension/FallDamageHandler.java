@@ -2,7 +2,7 @@ package net.ayfery.secret_arena.world.dimension;
 
 import net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents;
 import net.minecraft.util.Identifier;
-
+// change this code before 1.0 because it was made with help from ai i dont want to srap it :sob:
 public class FallDamageHandler {
     private static final Identifier SUPER_VOID_DIMENSION_ID = Identifier.of("secret_arena", "super_void");
     private static final float MAX_FALL_DAMAGE = 15.0f;

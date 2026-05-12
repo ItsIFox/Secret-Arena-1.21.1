@@ -7,7 +7,6 @@ import net.minecraft.world.GameRules;
 public class SAGamerules {
     public static GameRules.Key<GameRules.BooleanRule> VOID_TELEPORT;
 
-
     public static void register() {
         VOID_TELEPORT = GameRuleRegistry.register("doVoidTeleporting", GameRules.Category.PLAYER,
                 GameRuleFactory.createBooleanRule(true));

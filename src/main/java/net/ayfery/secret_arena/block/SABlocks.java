@@ -117,10 +117,6 @@ public class SABlocks {
                     .strength(0.2F)
                     .mapColor(MapColor.PURPLE).sounds(BlockSoundGroup.WOOL).burnable().pistonBehavior(PistonBehavior.DESTROY))
     );
-    public static final Block HURT_TRIGGER = registerBlock( "hurt_trigger",
-            new HurtBlock(AbstractBlock.Settings.create()
-                    .mapColor(MapColor.CLEAR).noCollision().allowsSpawning(Blocks::never).noBlockBreakParticles().pistonBehavior(PistonBehavior.DESTROY))
-    );
 
     public static final Block DRY_OAK_PLANKS = registerBlock( "dry_oak_planks",
             new Block(AbstractBlock.Settings.create()

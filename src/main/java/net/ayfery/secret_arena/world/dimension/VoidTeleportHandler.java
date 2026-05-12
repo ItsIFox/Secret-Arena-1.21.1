@@ -6,7 +6,8 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.Identifier;
-
+ // change this code before 1.0 because it was made with help from ai
+ // need look how aether did it
 public class VoidTeleportHandler {
     private static final Identifier SUPER_VOID_DIMENSION_ID = Identifier.of("secret_arena", "super_void");
 

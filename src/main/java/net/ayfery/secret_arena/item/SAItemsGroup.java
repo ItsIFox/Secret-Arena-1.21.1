@@ -48,7 +48,7 @@ public class SAItemsGroup {
                         entries.add(SABlocks.CUT_GENERIC_TILE_STAIRS);
                         entries.add(SABlocks.CUT_GENERIC_TILE_SLAB);
 
-                        entries.add(SABlocks.HURT_TRIGGER);
+                        entries.add(SAItems.POPPYCORN);
 
                         entries.add(SABlocks.POOL_TILES);
                         entries.add(SABlocks.POOL_TILE_STAIRS);
@@ -60,9 +60,6 @@ public class SAItemsGroup {
 
                         entries.add(SABlocks.WOOD_CRATE);
                         entries.add(SABlocks.CONE);
-                        entries.add(SAItems.POPPYCORN);
-
-
                     }).build());
 
     public static void registerItemsGroup() {

@@ -9,7 +9,8 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-
+// change this code before 1.0 because it was made with help from ai
+// this is so complex that i might have to make it worse
 @Mixin(BackgroundRenderer.class)
 public class SADimensionFogRenderer {
 
