@@ -34,7 +34,7 @@
                 {
                   "type": "minecraft:item",
                   "name": "minecraft:stick",
-                  "weight": 72,
+                  "weight": 80,
                   "conditions": [],
                   "functions": [
                     {
@@ -50,14 +50,14 @@
                 {
                   "type": "minecraft:item",
                   "name": "secret_arena:poppycorn",
-                  "weight": 39,
+                  "weight": 64,
                   "functions": [
                     {
                       "function": "minecraft:set_count",
                       "count": {
                         "type": "minecraft:uniform",
                         "min": 2,
-                        "max": 4
+                        "max": 8
                       }
                     }
                   ]
@@ -69,8 +69,43 @@
                 },
                 {
                   "type": "minecraft:item",
+                  "name": "secret_arena:orange_tiles",
+                  "weight": 8,
+                  "functions": [
+                    {
+                      "function": "minecraft:set_count",
+                      "count": {
+                        "type": "minecraft:uniform",
+                        "min": 4,
+                        "max": 8
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "secret_arena:generic_tiles",
+                  "weight": 8,
+                  "functions": [
+                    {
+                      "function": "minecraft:set_count",
+                      "count": {
+                        "type": "minecraft:uniform",
+                        "min": 4,
+                        "max": 8
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "secret_arena:cone",
+                  "weight": 4
+                },
+                {
+                  "type": "minecraft:item",
                   "name": "secret_arena:lunaplush",
-                  "weight": 1
+                  "weight": 2
                 }
               ]
             }

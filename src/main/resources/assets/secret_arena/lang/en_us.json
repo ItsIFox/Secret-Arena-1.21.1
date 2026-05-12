@@ -1,6 +1,5 @@
 {
   "itemgroup.secret_arena_items_group": "Secret Arena",
-  "item.secret_arena.crowbar": "Crowbar",
   "item.secret_arena.poppycorn": "Poppycorn",
   "block.secret_arena.cone": "Cone",
   "block.secret_arena.lunaplush": "Lunaplush",
@@ -36,7 +35,6 @@
   "block.secret_arena.dry_oak_trapdoor":"Dry Oak Trapdoor",
   "block.secret_arena.dry_oak_pressure_plate":"Dry Oak Pressure Plate",
   "block.secret_arena.dry_oak_button":"Dry Oak Button",
-  "biome.secret_arena.light_void": "Light Void",
   "biome.secret_arena.dark_void": "Dark Void",
   "message.secret_arena.welcome" : "You have been cast to the void...",
   "gamerule.doVoidTeleporting": "Players can access the super void"
